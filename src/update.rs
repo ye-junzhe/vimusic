@@ -10,8 +10,12 @@ pub fn update(app: &mut App, key_event: KeyEvent) {
                 app.quit()
             }
         },
-        KeyCode::Right | KeyCode::Char('k') => app.increment_counter(),
-        KeyCode::Left | KeyCode::Char('j') => app.decrement_counter(),
+        KeyCode::Right | KeyCode::Char('k') => {
+            app.user_choose_previous();
+        }
+        KeyCode::Left | KeyCode::Char('j') => {
+            app.user_choose_next();
+        }
         _ => {},
     };
 }

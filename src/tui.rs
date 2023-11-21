@@ -1,4 +1,4 @@
-use std::{io::{self, SeekFrom}, panic};
+use std::{io, panic};
 
 use anyhow::Result;
 use crossterm::{
