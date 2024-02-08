@@ -11,6 +11,7 @@ mod update;
 mod tui;
 mod event;
 
+// All the main log initialized here
 #[tokio::main]
 async fn main() -> Result<()> {
 

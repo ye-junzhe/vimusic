@@ -17,7 +17,6 @@ pub struct EventHandler {
     task: Option<JoinHandle<()>>,
 }
 
-
 impl EventHandler {
     pub fn new() -> Self {
 
